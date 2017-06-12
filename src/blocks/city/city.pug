@@ -1,5 +1,16 @@
 mixin city()
-	+b.SECTION.city&attributes(attributes)
-		block
-		+e.inner
-			+e.P.title city
+  +b.SECTION.city&attributes(attributes)
+    +e.inner
+      +e.SPAN.slogan О городе
+      +e.H2.title Самый романтичный город страны
+      +e.P.des Санкт-Петербург — город, где разводные мосты соединяют сердца людей с разных берегов. Город рек и каналов — наша Северная Венеция! Здесь самые обычные дома дышут вековой историей. Место, пропитанное романтикой белых ночей.
+    +e.slider(id="city-slider")
+      +e.slider-item
+        +e.photo
+          img(src="/img/city/city-1.jpg", alt="Исаакиевский собор")
+      +e.slider-item
+        +e.photo
+          img(src="/img/city/city-2.jpg", alt="Спас на Крови")
+      +e.slider-item
+        +e.photo
+          img(src="/img/city/city-3.jpg", alt="Развод мостов в Санкт-Петербурге")

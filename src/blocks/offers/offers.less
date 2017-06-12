@@ -1,3 +1,93 @@
 .offers{
 	display: block;
+  padding-top: 95px;
+  padding-bottom: 15px;
+  background-color: @grey;
+  
+
+  @media screen and (min-width: @width_tablet){
+
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+    text-align: center;
+  }
+
+  &__inner {
+    .container(30px);
+
+    @media screen and (min-width: @width_tablet){
+
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+  }
+
+  &__slogan {
+    font-family: @open;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @warm-grey;
+
+    @media screen and (min-width: @width_tablet){
+
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+  }
+
+  &__title {
+    font-family: @lora;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0.6px;
+    color: @black;
+
+    @media screen and (min-width: @width_tablet){
+
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+
+  }
+
+  &__row {
+    .row(30px);
+
+    @media screen and (min-width: @width_tablet){
+
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+  }
+
+  &__item {
+    .col(20px, left);
+    .col12-12;
+    padding-top: 50px;
+
+    @media screen and (min-width: @width_tablet){
+
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
 }

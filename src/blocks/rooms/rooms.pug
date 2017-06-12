@@ -1,5 +1,184 @@
 mixin rooms()
-	+b.SECTION.rooms&attributes(attributes)
-		block
-		+e.inner
-			+e.P.title rooms
+  +b.SECTION.rooms&attributes(attributes)
+    +e.inner
+      +e.SPAN.slogan Номера
+      +e.H2.title Забронируйте номер со скидкой 15%!
+      +e.P.time
+        +e.SPAN.time-start Заезд 14:00
+        +e.SPAN.time-end Выезд 12:00
+    
+    +e.item
+      +e.inner
+        +e.row
+          +e.visual
+            +b.slider(id="single")
+              +e.item
+                img(src="/img/rooms/single.jpg", alt="Одноместный Стандарт")
+              +e.item
+                img(src="/img/rooms/single2.jpg", alt="Одноместный Стандарт")
+              +e.item
+                img(src="/img/rooms/single3.jpg", alt="Одноместный Стандарт")
+          +e.info
+            +e.content
+
+              h3 Одноместный Стандарт
+              +e.price
+
+              +e.description
+                ul
+                  li Бесплатный Wi-Fi
+                  li ТВ с плоским экраном + кабельное
+                  li 1 односпальная кровать
+                  li Собственная ванная комната
+                  li Туалетные принадлежности (гель для душа, шампунь)
+                  li Фен
+                  li Гладильная доска и утюг
+                  li Вентилятор
+                a(class="btn btn--orange" href="#") Бронировать
+                +e.A.link-more(href="#") Подробнее
+    +e.item
+      +e.inner
+        +e.row
+          +e.visual
+            +b.slider(id="double")
+              +e.item
+                img(src="/img/rooms/comfort-no-window.jpg", alt="Двухместный комфорт без окна")
+              +e.item
+                img(src="/img/rooms/comfort-no-window2.jpg", alt="Двухместный комфорт без окна")
+
+          +e.info
+            +e.content
+              h3 Двухместный комфорт*
+              +e.price
+
+              +e.description
+                ul
+                  li Бесплатный Wi-Fi
+                  li ТВ с плоским экраном + кабельное
+                  li 1 большая двуспальная кровать или 2 раздельных односпальных
+                  li Собственная ванная комната
+                  li Туалетные принадлежности (гель для душа, шампунь)
+                  li Фен
+                  li Гладильная доска и утюг
+                  li Вентилятор
+                a(class="btn btn--orange" href="#") Бронировать
+                +e.A.link-more(href="#") Подробнее
+
+    +e.item
+      +e.inner
+        +e.row
+          +e.visual
+            +b.slider(id="double-window")
+              +e.item
+                img(src="/img/rooms/comfort.jpg", alt="Двухместный комфорт")
+              +e.item
+                img(src="/img/rooms/comfort2.jpg", alt="Двухместный комфорт")
+              +e.item
+                img(src="/img/rooms/comfort3.jpg", alt="Двухместный комфорт")
+
+          +e.info
+            +e.content
+              h3 Двухместный комфорт
+              +e.price
+
+              +e.description
+                ul
+                  li Бесплатный Wi-Fi
+                  li ТВ с плоским экраном + кабельное
+                  li 1 большая двуспальная кровать или 2 раздельных односпальных
+                  li Собственная ванная комната
+                  li Туалетные принадлежности (гель для душа, шампунь)
+                  li Фен
+                  li Гладильная доска и утюг
+                  li Вентилятор
+                a(class="btn btn--orange" href="#") Бронировать
+                +e.A.link-more(href="#") Подробнее
+
+    +e.item
+      +e.inner
+        +e.row
+          +e.visual
+            +b.slider(id="double-super")
+              +e.item
+                img(src="/img/rooms/comfort.jpg", alt="Улучшенный комфорт")
+              +e.item
+                img(src="/img/rooms/comfort2.jpg", alt="Улучшенный комфорт")
+              +e.item
+                img(src="/img/rooms/comfort3.jpg", alt="Улучшенный комфорт")
+
+          +e.info
+            +e.content
+              h3 Улучшенный комфорт
+              +e.price
+
+              +e.description
+                ul
+                  li Бесплатный Wi-Fi
+                  li ТВ с плоским экраном + кабельное
+                  li 1 большая двуспальная кровать или 2 раздельных односпальных
+                  li Собственная ванная комната
+                  li Туалетные принадлежности (гель для душа, шампунь)
+                  li Фен
+                  li Гладильная доска и утюг
+                  li Вентилятор
+                a(class="btn btn--orange" href="#") Бронировать
+                +e.A.link-more(href="#") Подробнее
+
+    +e.item
+      +e.inner
+        +e.row
+          +e.visual
+            +b.slider(id="family")
+              +e.item
+                img(src="/img/rooms/comfort.jpg", alt="Семейный номер")
+              +e.item
+                img(src="/img/rooms/comfort2.jpg", alt="Семейный номер")
+              +e.item
+                img(src="/img/rooms/comfort3.jpg", alt="Семейный номер")
+
+          +e.info
+            +e.content
+              h3 Семейный номер
+              +e.price
+
+              +e.description
+                ul
+                  li Бесплатный Wi-Fi
+                  li ТВ с плоским экраном + кабельное
+                  li 1 большая двуспальная кровать 1  односпальная
+                  li Собственная ванная комната
+                  li Туалетные принадлежности (гель для душа, шампунь)
+                  li Фен
+                  li Гладильная доска и утюг
+                  li Вентилятор
+                a(class="btn btn--orange" href="#") Бронировать
+                +e.A.link-more(href="#") Подробнее
+
+    +e.item
+      +e.inner
+        +e.row
+          +e.visual
+            +b.slider(id="delux")
+              +e.item
+                img(src="/img/rooms/comfort.jpg", alt="Делюкс с кухней")
+              +e.item
+                img(src="/img/rooms/delux-kitchen.jpg", alt="Делюкс с кухней")
+
+          +e.info
+            +e.content
+              h3 Делюкс с кухней
+              +e.price
+
+              +e.description
+                ul
+                  li Бесплатный Wi-Fi
+                  li ТВ с плоским экраном + кабельное
+                  li 1 двуспальная кровать 
+                  li Собственная ванная комната
+                  li Туалетные принадлежности
+                  li Фен
+                  li Сейф
+                  li Гладильная доска и утюг
+                  li Плита, холодильник, чайник, тостер, посуда
+                a(class="btn btn--orange" href="#") Бронировать
+                +e.A.link-more(href="#") Подробнее
