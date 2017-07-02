@@ -5,15 +5,31 @@ mixin page-footer()
         +e.pay
           +e.SPAN.title Принимаем к оплате
           +e.pay-systems
+            +e.pay-item
+              +e.IMG.img(src="img/pay/visa-dark@2x.png")
+            +e.pay-item
+              +e.IMG.img(src="img/pay/american-express-dark@2x.png")
+            +e.pay-item
+              +e.IMG.img(src="img/pay/union-pay-dark@2x.png")
+            +e.pay-item
+              +e.IMG.img(src="img/pay/master-card-dark@2x.png")
+            +e.pay-item
+              +e.IMG.img(src="img/pay/diners-club-dark@2x.png")
+            +e.pay-item
+              +e.IMG.img(src="img/pay/j-c-b-dark@2x.png")
+            +e.pay-item
+              +e.IMG.img(src="img/pay/visa-dark@2x.png")
           +e.copyright
-            p 2017. Арт-отель «АзАрт». Все права защищены.
+            p 
+              span © 2017. Арт-отель «АзАрт». 
+              span Все права защищены.
             +e.autor
               a(href="https://readymag.com/u21507909/772992/" target="_blank") Дизайн сайта Jana Zamckova
-              a(href="https://github.com/kaddem" target="_blank") Разработка
-          +e.lang
+              a(href="https://github.com/kaddem" target="_blank") Разработка этого чувака
+            +e.lang
               a(href="#" class="active") ru
               a(href="#") en
-        +e.nav
+        +e.nav-block
           +e.SPAN.title Навигация по сайту
           +e.NAV.nav
             ul
