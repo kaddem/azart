@@ -1,3 +1,237 @@
 .contacts{
+  position: relative;
 	display: block;
+
+  @media screen and (min-width: @width_tablet){
+
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+    .clearfix;
+  }
+
+  &__inner {
+    .container(30px);
+
+    @media screen and (min-width: @width_tablet){
+
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+  }
+
+  &__row {
+    .row(30px);
+  }
+
+  &__info {
+    // position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-width: @width_tablet){
+
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      float: left;
+      width: 50%;
+      height: 540px;
+    }
+
+    // &:before {
+    //   content: '';
+    //   position: absolute;
+    //   display: block;
+    //   top: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   right: 0;
+    //   margin: auto;
+    //   background-color: rgba(0, 0, 0, .6);
+    // }
+  }
+
+  &__info-darkness {
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+  }
+
+  &__content {
+    .col(30px, left);
+    .col12-12;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    @media screen and (min-width: @width_tablet){
+      padding-top: 75px;
+      padding-bottom: 75px;
+      padding-left: 130px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      height: 540px;
+      .col(30px, left);
+      padding-top: 75px;
+      padding-bottom: 75px;
+      padding-right: 50%;
+    }
+
+    & h2 {
+      margin-top: 0;
+      margin-bottom: 17px;
+      font-family: @lora;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.6px;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-weight: normal;
+
+      @media screen and (min-width: @width_tablet){
+        font-size: 38px;
+        line-height: 46px;
+        letter-spacing: 1px;
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+        margin-bottom: 34px;
+      }
+
+      
+    }
+
+  }
+
+  &__text {
+    margin: 0;
+    font-family: @open;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+  }
+
+  &__phone {
+    display: block;
+    font-family: @open;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  &__subtitle {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: @open;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+
+    @media screen and (min-width: @width_tablet){
+      margin-top: 40px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+  }
+
+  &__time {
+    display: block;
+    margin: 0;
+    font-family: @open;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+  }
+
+  &__time-start {
+    padding-right: 5px;
+  }
+
+  &__time-end {
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -3px;
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background-color: rgba(255, 255, 255, .6);
+    }
+  }
+
+  &__social {
+    margin-top: 10px;
+
+    @media screen and (min-width: @width_tablet){
+      margin-top: 20px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+
+    & a {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 20px 0 0;
+      background-size: @icon-vk-2x-total-width/2 @icon-vk-2x-total-height/2;
+
+      &.vk {
+        .sprite(@icon-vk-2x);
+        width: @icon-vk-2x-width/2;
+        height: @icon-vk-2x-height/2;
+        background-position: @icon-vk-2x-offset-x/2 @icon-vk-2x-offset-y/2;
+      }
+
+      &.insta {
+        .sprite(@icon-insta-2x);
+        width: @icon-insta-2x-width/2;
+        height: @icon-insta-2x-height/2;
+        background-position: @icon-insta-2x-offset-x/2 @icon-insta-2x-offset-y/2;
+      }
+    }
+  }
+
+  &__map-col {
+    .col(0px, left);
+    .col12-12;
+    height: 380px;
+
+    @media screen and (min-width: @width_tablet){
+      height: 540px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      float: left;
+      width: 50%;
+    }
+  }
 }

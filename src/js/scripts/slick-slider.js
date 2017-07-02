@@ -29,7 +29,6 @@ $(document).ready(function(){
       arrows: false,
       dots: true,
       centerMode: true,
-      // centerPadding: '20px',
       focusOnSelect: true
     });
   

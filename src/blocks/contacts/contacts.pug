@@ -1,4 +1,22 @@
 mixin contacts()
-  +b.SECTION.contacts&attributes(attributes)
-    +e.inner
-      +e.P.title contacts
+  +b.contacts&attributes(attributes)
+    +e.info(style="background-image: url(img/bg_contacts.jpg)")
+      +e.info-darkness
+        +e.inner
+          +e.row
+            +e.content
+              h2 Контакты
+              +e.A.phone(href="tel:+79310028184") +7 (931) 002 81 84
+              +e.P.text Санкт-Петербург, Невский проспект 136 
+              +e.A.phone(href="mailto:azart@avangard-hotel.com") azart@avangard-hotel.com
+              //- +e.A.link(href="btn") Как проехать?
+              +e.P.subtitle Арт-отель «АзАрт»
+              +e.P.text Стойка регистрации открыта круглосуточно.
+              +e.P.time
+                +e.SPAN.time-start Заезд 14:00
+                +e.SPAN.time-end Выезд 12:00
+              +e.social.--tablet
+                a(href="#" class="vk")
+                a(href="#" class="insta")
+    +e.map-col
+      script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0c14436f3d2d902a6610460848c2c9fd889babd175886e77451b1eff05324caa&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false")

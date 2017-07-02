@@ -2,6 +2,10 @@
 	display: block;
   padding-top: 20px;
 
+  @media screen and (min-width: @width_desktop_min){
+    padding-top: 60px;
+  }
+
   &__inner {
     .container(30px);
   }
@@ -122,8 +126,16 @@
     &:nth-child(2n+1) {
 
       & .rooms__info {
-        left: 40px;
+        
         right: auto;
+
+        @media screen and (min-width: @width_tablet){
+          left: 40px;
+        }
+
+        @media screen and (min-width: @width_desktop_min){
+          
+        }
       }
 
       & .slick-dots {
@@ -137,7 +149,23 @@
           .col(30px, right);
         }
       }
+
+      & .rooms__number {
+
+        @media screen and (min-width: @width_tablet){
+          right: -320px;
+          top: auto;
+          left: auto;
+          bottom: 10px;
+        }
+
+        @media screen and (min-width: @width_desktop_min){
+          right: 0;
+          bottom: 0;
+        }
+      }
     }
+
   }
 
   &__visual {
@@ -156,6 +184,7 @@
   }
 
   &__info {
+    position: relative;
     .col(20px, left);
     .col12-12;
     padding-top: 10px;
@@ -178,6 +207,7 @@
 
     @media screen and (min-width: @width_desktop_min){
       position: static;
+      height: auto;
       .col(30px, left);
       .col12-4;
     }
@@ -202,7 +232,105 @@
       letter-spacing: 0.6px;
       text-transform: uppercase;
       color: @warm-grey;
+
+      @media screen and (min-width: @width_desktop_min){
+        padding-left: 25px;
+      }
     }
+  }
+
+  &__price {
+
+    @media screen and (min-width: @width_desktop_min){
+      position: relative;
+      padding-left: 25px;
+    }
+
+    & p {
+      display: inline-block;
+      margin: 0;
+      font-family: @open;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0.4px;
+      color: @warm-grey;
+
+      @media screen and (min-width: @width_tablet){
+      
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+        display: block;
+        margin: 20px 0;
+      }
+    }
+  }
+
+  &__price-old {
+    display: inline-block;
+    font-family: @open;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: @warm-grey;
+    text-decoration: line-through;
+
+    @media screen and (min-width: @width_tablet){
+    
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      display: block;
+    }
+  }
+
+  &__price-new {
+    display: inline-block;
+    font-family: @open;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    color: @red-two;
+
+    @media screen and (min-width: @width_tablet){
+    
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      display: block;
+      line-height: 28px;
+    }
+  }
+
+  &__number {
+    position: absolute;
+    left: 10px;
+    top: -40px;
+    font-family: @open;
+    font-size: 15px;
+    line-height: 33px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #ffffff;
+
+    @media screen and (min-width: @width_tablet){
+      left: -320px;
+      top: auto;
+      bottom: 10px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      bottom: 0px;
+      left: auto;
+      right: 10px;
+      line-height: 28px;
+      color: @warm-grey;
+    }
+
+    & > span {
+      font-size: 24px;
+      letter-spacing: 0.4px;
+    } 
   }
 
   &__description {
@@ -213,7 +341,7 @@
     }
 
     @media screen and (min-width: @width_desktop_min){
-      padding: 30px 30px 40px 40px;
+      padding: 30px 30px 40px 30px;
       background-color: @grey;
     }
 

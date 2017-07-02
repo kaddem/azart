@@ -11,7 +11,10 @@
   }
 
   @media screen and (min-width: @width_desktop_min){
-
+    padding-bottom: 30px;
+    background-image: linear-gradient(0deg, #fff 300px, @grey 300px);
+    max-width: 100vw;
+    overflow: hidden;
   }
 
   &__inner {
@@ -71,18 +74,44 @@
     }
 
     @media screen and (min-width: @width_desktop_min){
-
+      width: 60%;
+      margin: 35px auto;
     }
   }
 
   &__slider {
 
+    & .slick-list {
+
+      @media screen and (min-width: @width_desktop_min){
+        overflow: visible;
+      }
+      
+    }
+  }
+
+  &__slider-inner {
+
+    @media screen and (min-width: @width_desktop_min){
+      width: @container_desktop_min;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin: 0 auto;
+      .clearfix();
+      box-sizing: border-box;
+    }
   }
 
   &__slider-item {
     padding: 10px;
     box-sizing: border-box;
     opacity: .6;
+    outline: none;
+    transition: all .3s ease;
+
+    @media screen and (min-width: @width_desktop_min){
+      padding: 10px 35px;
+    }
 
     &.slick-current {
       opacity: 1;
