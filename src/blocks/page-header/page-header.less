@@ -69,7 +69,8 @@
     }
 
     @media screen and (min-width: @width_desktop_min){
-
+      .col12-offset-2;
+      .col12-10;
     }
   }
 
@@ -82,7 +83,9 @@
     }
 
     @media screen and (min-width: @width_desktop_min){
-
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
     }
 
     &:before {
@@ -144,7 +147,9 @@
       }
 
       @media screen and (min-width: @width_desktop_min){
-
+        float: none;
+        display: inline-block;
+        margin-left: 25px;
       }
 
       &:before {
@@ -180,7 +185,7 @@
     }
 
     @media screen and (min-width: @width_desktop_min){
-
+      margin-left: 50px;
     }
 
     &:before {
@@ -358,6 +363,15 @@
     .col12-8;
     .col12-offset-4;
 
+    @media screen and (min-width: @width_tablet){
+      text-align: right;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      .col12-10;
+      .col12-offset-2;
+    }
+
     & ul {
       padding-left: 0;
       padding-top: 5px;
@@ -370,7 +384,7 @@
       }
 
       @media screen and (min-width: @width_desktop_min){
-
+        padding: 40px 0;
       }
     }
 
@@ -383,7 +397,7 @@
       }
 
       @media screen and (min-width: @width_desktop_min){
-
+        margin-left: 70px;
       }
 
       &:first-child {
