@@ -50,6 +50,7 @@
     @media screen and (min-width: @width_desktop_min){
       .col(30px, left);
       .col12-6;
+      margin-left: 0;
       padding-bottom: auto;
       min-height: 400px;
     }
@@ -64,6 +65,13 @@
         .col(30px, right);
         .col12-offset-6;
       }
+
+      & .about__content {
+
+        @media screen and (min-width: @width_desktop_min){
+          padding-left: 70px;
+        }
+      }
     }
   }
 
@@ -75,7 +83,7 @@
     }
 
     @media screen and (min-width: @width_desktop_min){
-      padding-left: 70px;
+      
     }
 
     & span {
