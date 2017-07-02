@@ -1,7 +1,449 @@
 .page-header{
   display: block;
+  position: relative;
+
+  &__top {
+
+    & .page-header__inner {
+      padding-top: 20px;
+      padding-bottom: 16px;
+    }
+    
+  }
+
+  &__bottom {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 2;
+  }
   
   &__inner {
+    position: relative;
     .container(30px);
+  }
+
+  &__row {
+    .row(30px);
+  }
+
+  &__logo-box {
+    .col(20px, left);
+    .col12-4;
+    padding-top: 6px;
+    font-size: 0;
+
+    @media screen and (min-width: @width_tablet){
+      position: absolute;
+      top: 0px;
+      left: 10px;
+      width: 170px;
+      height: 170px;
+      padding: 20px;
+      float: none;
+      z-index: 10;
+      background-color: #fff;
+      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  &__contacts {
+    .col(20px, left);
+    .col12-8;
+
+    @media screen and (min-width: @width_tablet){
+      .col12-offset-4;
+      .clearfix();
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+  }
+
+  &__address {
+
+    @media screen and (min-width: @width_tablet){
+      margin-bottom: 27px;
+      position: relative;
+      padding-left: 30px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+
+    &:before {
+
+      @media screen and (min-width: @width_tablet){
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        .sprite(@icon-pin-2x);
+        width: @icon-pin-2x-width/2;
+        height: @icon-pin-2x-height/2;
+        background-size: @icon-phone-2x-total-width/2 @icon-phone-2x-total-height/2;
+        background-position: @icon-pin-2x-offset-x/2 @icon-pin-2x-offset-y/2;
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+
+      }
+    }
+
+    & p {
+      margin: 0;
+      font-family: @open;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      text-align: left;
+      color: @black;
+
+      @media screen and (min-width: @width_tablet){
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+
+      }
+
+    }
+
+    & a {
+      display: none;
+
+      @media screen and (min-width: @width_tablet){
+        position: relative;
+        display: block;
+        float: right;
+        font-family: @open;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: @black;
+        text-decoration: none;
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+
+      }
+
+      &:before {
+
+        @media screen and (min-width: @width_tablet){
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: -15px;
+          margin: auto;
+          width: 1px;
+          height: 100%;
+          background-color: @black;
+          opacity: .4;
+        }
+
+        @media screen and (min-width: @width_desktop_min){
+
+        }
+      }
+    }
+  }
+
+  &__phone {
+
+    @media screen and (min-width: @width_tablet){
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 30px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+
+    &:before {
+
+      @media screen and (min-width: @width_tablet){
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        .sprite(@icon-phone-2x);
+        width: @icon-phone-2x-width/2;
+        height: @icon-phone-2x-height/2;
+        background-size: @icon-phone-2x-total-width/2 @icon-phone-2x-total-height/2;
+        background-position: @icon-phone-2x-offset-x/2 @icon-phone-2x-offset-y/2;
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+
+      }
+    }
+
+    & a {
+      font-family: @open;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: bold;
+      letter-spacing: 0.6px;
+      text-align: left;
+      color: @pumpkin-orange;
+      text-decoration: none;
+    }
+  }
+
+  &__lang {
+    display: inline-block;
+
+    @media screen and (min-width: @width_tablet){
+      float: right;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+
+    & a {
+      position: relative;
+      padding-left: 8px;
+      margin-left: 6px;
+      font-family: @open;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      text-align: left;
+      color: @black;
+      opacity: .4;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background-color: @black;
+        opacity: .4;
+      }
+
+      &:first-child {
+        margin: 0;
+        padding: 0;
+
+        &:before {
+          content: none;
+        }
+      }
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    &--mobile {
+      
+      @media screen and (min-width: @width_tablet){
+        display: none;
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+
+      }
+    }
+
+    &--tablet {
+      display: none;
+
+      @media screen and (min-width: @width_tablet){
+        display: inline-block;
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+
+      }
+    }
+  }
+
+
+  &__social {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    padding-bottom: 3px;
+
+    @media screen and (min-width: @width_tablet){
+      margin-left: 40px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+
+    & a {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 5px;
+      background-size: @icon-vk-2x-total-width/2 @icon-vk-2x-total-height/2;
+
+      &.vk {
+        .sprite(@icon-vk-2x);
+        width: @icon-vk-2x-width/2;
+        height: @icon-vk-2x-height/2;
+        background-position: @icon-vk-2x-offset-x/2 @icon-vk-2x-offset-y/2;
+      }
+
+      &.insta {
+        .sprite(@icon-insta-2x);
+        width: @icon-insta-2x-width/2;
+        height: @icon-insta-2x-height/2;
+        background-position: @icon-insta-2x-offset-x/2 @icon-insta-2x-offset-y/2;
+      }
+    }
+
+    &--mobile {
+
+      @media screen and (min-width: @width_tablet){
+        display: none;
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+
+      }
+    }
+
+    &--tablet {
+      display: none;
+
+      @media screen and (min-width: @width_tablet){
+        display: inline-block;
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+
+      }
+    }
+  }
+
+
+
+
+  &__main-nav {
+    .col(20px, left);
+    .col12-8;
+    .col12-offset-4;
+
+    & ul {
+      padding-left: 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 0;
+      list-style: none;
+
+      @media screen and (min-width: @width_tablet){
+        padding: 20px 0;
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+
+      }
+    }
+
+    & li {
+      margin: 11px 0;
+
+      @media screen and (min-width: @width_tablet){
+        display: inline-block;
+        margin: 0 0 0 20px;
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+
+      }
+
+      &:first-child {
+        @media screen and (min-width: @width_tablet){
+          margin-left: 0;
+        }
+      }
+    }
+
+    & a {
+      position: relative;
+      display: block;
+      font-family: @open;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: left;
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:active {
+        
+        @media screen and (min-width: @width_tablet){
+          
+        }
+
+        @media screen and (min-width: @width_desktop_min){
+
+        }
+
+        &:before {
+
+          @media screen and (min-width: @width_tablet){
+            content: '';
+            
+          }
+
+          @media screen and (min-width: @width_desktop_min){
+
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.logo {
+  width: 100%;
+
+  @media screen and (min-width: @width_tablet){
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+
+  }
+
+  &__img {
+    width: 100%;
   }
 }

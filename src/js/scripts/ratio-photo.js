@@ -47,13 +47,15 @@ $(window).load(function() {
 
   ratioPhoto('.offers-content__photo-box');
   ratioPhoto('.slider__item');
-  ratioPhoto('.city__photo');
+  // ratioPhoto('.city__photo');
+  ratioPhoto('.excursion__photo');
   
   window.addEventListener("resize", function() {
 
     ratioPhoto('.offers-content__photo-box');
     ratioPhoto('.slider__item');
-    ratioPhoto('.city__photo');
+    // ratioPhoto('.city__photo');
+    ratioPhoto('.excursion__photo');
 
   }, false);
 

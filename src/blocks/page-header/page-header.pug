@@ -2,28 +2,40 @@ mixin page-header()
   +b.page-header&attributes(attributes)
     +e.top
       +e.inner
-        +e.logo-box
-          +b.logo
-            +e.IMG.img(src="/img/logo.svg")
-        +e.contacts
-          p Санкт-Петербург, Невский проспект 136
-          a(href="#") Как добраться?
-        +e.phone 
-          a(href="tel:+79310028184") +7 (931) 002 81 84
-        +e.lang
-          a(href="#" class="active") ru
-          a(href="#") en
+        +e.row
+          +e.logo-box
+            +b.logo
+              +e.IMG.img(src="/img/logo.svg")
+          +e.contacts
+            +e.lang.--mobile
+              a(href="#" class="active") ru
+              a(href="#") en
+            +e.social.--mobile
+              a(href="#" class="vk")
+              a(href="#" class="insta")
+            +e.address
+              p Санкт-Петербург, Невский проспект 136
+              a(href="#") Как добраться?
+            +e.phone 
+              a(href="tel:+79310028184") +7 (931) 002 81 84
+            +e.social.--tablet
+              a(href="#" class="vk")
+              a(href="#" class="insta")
+            +e.lang.--tablet
+              a(href="#" class="active") ru
+              a(href="#") en
     +e.bottom
       +e.inner
-        +e.NAV.main-nav
-          ul
-            li
-              a(href="#") Об Отеле
-            li
-              a(href="#") Акции
-            li
-              a(href="#") Экскурсии
-            li
-              a(href="#") Номера
-            li
-              a(href="#") Контакты
+        +e.row
+          +e.NAV.main-nav
+            ul
+              li
+                a(href="#") Об Отеле
+              li
+                a(href="#") Акции
+              li
+                a(href="#") Экскурсии
+              li
+                a(href="#") Номера
+              li
+                a(href="#") Контакты

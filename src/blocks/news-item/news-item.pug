@@ -1,0 +1,7 @@
+mixin news-item(title, date, text, text2)
+  +e.item&attributes(attributes)
+    +e.content
+      H3= title
+      span= date
+      p= text
+      p= text2

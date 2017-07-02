@@ -1,5 +1,13 @@
 mixin news()
-	+b.SECTION.news&attributes(attributes)
-		block
-		+e.inner
-			+e.P.title news
+  +b.SECTION.news&attributes(attributes)
+    +e.inner
+      +e.row
+        +e.news-block
+          +e.H2.title Свежие новости
+          +e.carousel(id="news-carousel")
+            block
+        +e.visual
+          +e.photo-box
+            +e.IMG.img(src="/img/firstyle.jpg", alt="Фирменный стиль отеля «АзАрт»")
+          +e.photo-box.--back
+            +e.IMG.img(src="/img/firstyle2.jpg", alt="Фирменный стиль отеля «АзАрт»")

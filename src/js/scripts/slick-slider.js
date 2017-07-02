@@ -36,5 +36,7 @@ $(document).ready(function(){
   }
 
   sliderCity("#city-slider");
+  sliderCity("#excursion-slider");
+  
 
 });

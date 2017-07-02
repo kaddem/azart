@@ -1,5 +1,32 @@
 mixin page-footer()
-	+b.SECTION.page-footer&attributes(attributes)
-		block
-		+e.inner
-			+e.P.title page-footer
+  +b.SECTION.page-footer&attributes(attributes)
+    +e.inner
+      +e.row
+        +e.pay
+          +e.SPAN.title Принимаем к оплате
+          +e.pay-systems
+          +e.copyright
+            p 2017. Арт-отель «АзАрт». Все права защищены.
+            +e.autor
+              a(href="https://readymag.com/u21507909/772992/" target="_blank") Дизайн сайта Jana Zamckova
+              a(href="https://github.com/kaddem" target="_blank") Разработка
+          +e.lang
+              a(href="#" class="active") ru
+              a(href="#") en
+        +e.nav
+          +e.SPAN.title Навигация по сайту
+          +e.NAV.nav
+            ul
+              li
+                a(href="#") Об отеле
+              li
+                a(href="#") Акции
+              li
+                a(href="#") Номера
+              li
+                a(href="#") Экскурсии
+        +e.about
+          +e.SPAN.title О нас
+          p Арт-отель «АзАрт» расположен в самом сердце Санкт-Петербурга на Невском проспекте в 600 метрах от станции метро «Площадь Восстания» и Московского железнодорожного вокзала. 
+          p Отель прошел классификацию объектов туристической индустрии.
+          p В Арт-отеле «Азарт» вы можете получить услуги визовой поддержки и другие дополнительные услуги. Так же мы предлагаем завтраки, высокоскоростной Wi-Fi на территории всего отеля и бесплатную частную парковку.

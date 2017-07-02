@@ -1,3 +1,141 @@
 .news{
-	display: block;
+  display: block;
+  padding-bottom: 40px;
+  background-color: @grey;
+
+  @media screen and (min-width: @width_tablet){
+    
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+
+  }
+
+  &__inner {
+    .container(30px);
+  }
+
+  &__row {
+    .row(30px);
+  }
+
+  &__news-block {
+    .col(30px, left);
+    .col12-12;
+    padding-bottom: 14px;
+
+    @media screen and (min-width: @width_tablet){
+      .col(20px, left);
+      .col12-6;
+      padding-left: 40px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+  }
+
+  &__visual {
+    .col(0, left);
+    .col12-12;
+    height: 390px;
+
+    @media screen and (min-width: @width_tablet){
+      .col(20px, left);
+      .col12-6;
+      height: 450px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+  }
+
+  &__photo-box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &--back {
+      display: none;
+    }
+
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-family: @open;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: @warm-grey;
+
+    @media screen and (min-width: @width_tablet){
+      margin-top: 35px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+  }
+
+  &__carousel {
+    padding-bottom: 55px;
+
+    @media screen and (min-width: @width_tablet){
+      padding-bottom: 85px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+
+    & .slick-prev {
+      left: 0;
+
+      &:before {
+        .sprite(@icon-slider-prev-2x);
+        background-position: @icon-slider-prev-2x-offset-x/2 @icon-slider-prev-2x-offset-y/2;
+      }
+    }
+
+    & .slick-next {
+      left: 55px;
+
+      &:before {
+        .sprite(@icon-slider-next-2x);
+        background-position: @icon-slider-next-2x-offset-x/2 @icon-slider-next-2x-offset-y/2;
+      }
+    }
+
+    & .slick-arrow {
+      position: absolute;
+      bottom: 0;
+      width: 45px;
+      height: 45px;
+      opacity: 0.4;
+      border-radius: 2px;
+      border: solid 1px @warm-grey;
+      background-color: @grey;
+      font-size: 0;
+
+      &:hover {
+        opacity: .8;
+      }
+
+      &:before {
+        content: '';
+        display: inline-block;
+        width: @icon-slider-next-2x-width/2;
+        height: @icon-slider-next-2x-height/2;
+        background-size: @icon-slider-next-2x-total-width/2 @icon-slider-next-2x-total-height/2;
+      }
+    }
+  }
 }

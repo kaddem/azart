@@ -1,7 +1,9 @@
 mixin promo()
-  +b.SECTION.promo&attributes(attributes)
+  +b.SECTION.promo(style="background-image: url(/img/promo_bg_web.jpg)")&attributes(attributes)
     +e.inner
-      +e.H1.title Добро пожаловать в Арт-отель «АзАрт»!
-      +e.P.slogan Скидка 15% при бронировании в ИЮНЕ 2017 
+      +e.row
+        +e.H1.title Добро пожаловать <br>в Арт-отель «АзАрт»!
+        +e.P.slogan Скидка 15% при бронировании <br>в ИЮНЕ 2017 
 
-    +b.form форма заказа
+    +b.form 
+      +e.inner форма заказа

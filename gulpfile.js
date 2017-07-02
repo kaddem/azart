@@ -55,14 +55,14 @@ const spritesmith = require('gulp.spritesmith');
 // Path
 const path = {
   build: {
-    html: 'build/',
-    js: 'build/js/',
-    css: 'build/css/',
-    img: 'build/img/',
-    fonts: 'build/fonts/',
+    html: 'docs/',
+    js: 'docs/js/',
+    css: 'docs/css/',
+    img: 'docs/img/',
+    fonts: 'docs/fonts/',
     pngSprites: 'src/img/',
     pngSpritesCss: 'src/less/common/',
-    deploy: 'build/**/*'
+    deploy: 'docs/**/*'
   },
   src: {
     // html: ['src/html/**/*.pug', '!src/html/partials/abstracts/bemto/**/*.*'],
@@ -85,7 +85,7 @@ const path = {
     fonts: 'src/fonts/**/*.*',
     pngSprites: 'src/img/png-sprite/*.png'
   },
-  clean: './build'
+  clean: './docs'
 };
 
 // Compilation jade
@@ -190,7 +190,7 @@ gulp.task('build', gulp.series('clean', gulp.parallel('png-sprites', 'pug', 'fon
 // Server config
 var config = {
   server: {
-    baseDir: "./build"
+    baseDir: "./docs"
   },
 //  tunnel: true,
   host: 'localhost',
@@ -202,7 +202,7 @@ gulp.task('serve', function() {
   browserSync.init(config);
 
   // browserSync.reload;
-  browserSync.watch('build/**/*.*').on('change', browserSync.reload);
+  browserSync.watch('docs/**/*.*').on('change', browserSync.reload);
 });
 
 // Overall watch
