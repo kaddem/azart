@@ -1,0 +1,120 @@
+.rooms-des{
+	display: block;
+
+  @media screen and (min-width: @width_tablet){
+
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+
+  }
+
+  &__inner {
+    .container(30px);
+  }
+
+  &__row {
+    .row(30px);
+  }
+
+  &__form {
+    .col(30px, left);
+    .col12-12;
+  }
+
+
+  &__des {
+    .col(30px, left);
+    .col12-12;
+  }
+
+  &__title {
+    font-family: @lora;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.6px;
+    color: @black;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  &__price {
+
+    & p {
+      display: inline-block;
+      font-family: @open;
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: @warm-grey;
+    }
+  }
+
+  &__price-old {
+    display: inline-block;
+    font-family: @open;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: @warm-grey;
+    text-decoration: line-through;
+
+    & span {
+      text-decoration: line-through;
+    }
+  }
+
+  &__price-new {
+    display: inline-block;
+    font-family: @open;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: @red-two;
+  }
+
+  &__time {
+    font-family: @open;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: @warm-grey;
+  }
+
+  &__time-start {
+    padding-right: 5px;
+  }
+
+  &__time-end {
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -3px;
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__text {
+
+    & p {
+      font-family: @open;
+      font-size: 15px;
+      line-height: 1.6;
+      letter-spacing: 0.5px;
+      color: @black;
+    }
+  }
+}

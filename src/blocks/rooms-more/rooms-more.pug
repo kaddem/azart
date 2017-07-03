@@ -1,5 +1,39 @@
 mixin rooms-more()
-	+b.SECTION.rooms-more&attributes(attributes)
-		block
-		+e.inner
-			+e.P.title rooms-more
+  +b.SECTION.rooms-more&attributes(attributes)
+    +e.inner
+      +e.head
+        +e.H2.title Другие номера
+        +e.A.link(href="index.html#rooms") Все
+      +e.row
+        +e.item
+          +e.room(style="background-image: url(img/rooms/single.jpg)")
+            +e.info
+              +e.SPAN.info-title Ономестный стандарт
+              +e.price
+                +e.SPAN.price-old 3 800
+                  span(class="rouble") P
+                +e.SPAN.price.--new 3 230
+                  span(class="rouble") P
+                +e.SPAN.period сутки
+
+        +e.item
+          +e.room(style="background-image: url(img/rooms/single.jpg)")
+            +e.info
+              +e.SPAN.info-title Двухместный комфорт без окна
+              +e.price
+                +e.SPAN.price-old 3 900
+                  span(class="rouble") P
+                +e.SPAN.price.--new 3 315
+                  span(class="rouble") P
+                +e.SPAN.period сутки
+
+        +e.item
+          +e.room(style="background-image: url(img/rooms/single.jpg)")
+            +e.info
+              +e.SPAN.info-title Двухместный комфорт
+              +e.price
+                +e.SPAN.price-old 3 900
+                  span(class="rouble") P
+                +e.SPAN.price.--new 3 315
+                  span(class="rouble") P
+                +e.SPAN.period сутки

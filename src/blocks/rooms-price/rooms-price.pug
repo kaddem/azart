@@ -1,0 +1,72 @@
+mixin rooms-price()
+  +b.rooms-price&attributes(attributes)
+    +e.inner
+      +e.row
+        +b.table
+
+
+          +e.head
+            +e.col Сезон
+            +e.col Период сезона
+            +e.col Цена за номер, руб./сут.
+
+          +e.table-row
+            +e.col 
+              p Низкий
+              +e.time
+                p 01.10.17 − 30.12.17
+            +e.col 
+              p 01.10.17 − 30.12.17
+            +e.col 
+              +e.single
+                +e.SPAN.price.--old 3 900
+                +e.SPAN.price.--new 3 315
+              +e.few
+                +e.SPAN.price.--old 4 500
+                +e.SPAN.price.--new 3 825
+
+
+          +e.table-row
+            +e.col 
+              p Межсезонье
+              +e.time
+                p 01.03.17 − 30.04.17
+                p 01.09.17 − 30.09.17
+            +e.col 
+              p 01.03.17 − 30.04.17
+              p 01.09.17 − 30.09.17
+            +e.col 
+              +e.single
+                +e.SPAN.price 4 500
+              +e.few
+                +e.SPAN.price 5 000
+
+          +e.table-row
+            +e.col 
+              p Высокий
+              +e.time
+                p 16.07.17 − 31.08.17
+                p 31.12.17 − 10.01.18
+                p 01.05.17 − 14.05.17
+            +e.col 
+              p 16.07.17 − 31.08.17
+              p 31.12.17 − 10.01.18
+              p 01.05.17 − 14.05.17
+            +e.col 
+              +e.single
+                +e.SPAN.price 5 000
+              +e.few
+                +e.SPAN.price 5 500
+
+          +e.table-row
+            +e.col 
+              p Белые ночи
+              +e.time
+                p 15.05.17 − 15.07.17
+            +e.col 
+              p 15.05.17 − 15.07.17
+            +e.col 
+              +e.single
+                +e.SPAN.price 5 500
+              +e.few
+                +e.SPAN.price 6 000

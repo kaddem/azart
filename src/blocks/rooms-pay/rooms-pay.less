@@ -1,0 +1,74 @@
+.rooms-pay{
+	display: block;
+  padding-top: 20px;
+  padding-bottom: 30px; 
+
+
+  &__inner {
+    .container(30px);
+  }
+
+  &__pay {
+    .row(10px);
+  }
+
+  &__title {
+    font-family: @open;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: @black;
+    text-transform: uppercase;
+  }
+
+  &__pay-systems {
+    margin-top: 16px;
+    margin-bottom: 30px;
+    .clearfix;
+    font-size: 0;
+    text-align: left;
+
+    @media screen and (min-width: @width_tablet){
+      text-align: left;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+  }
+
+  &__pay-item {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 90px;
+    height: 54px;
+
+    @media screen and (min-width: @width_tablet){
+      width: 100px;
+      height: 60px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+    
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

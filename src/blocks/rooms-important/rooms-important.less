@@ -1,0 +1,50 @@
+.rooms-important{
+  padding-top: 40px;
+  padding-bottom: 20px;
+  
+  &__inner {
+    .container(30px);
+  }
+
+  &__row {
+    position: relative;
+    .row(10px);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    &:before {
+      content: 'i';
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 25px;
+      font-family: @open;
+      border-radius: 50%;
+      border: 1px solid @pumpkin-orange;
+      text-align: center;
+      color: @pumpkin-orange;
+    }
+
+    & li {
+      .col(0, left);
+      .col12-9;
+      .col12-offset-3;
+      margin-top: 17px;
+      font-family: @open;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.47;
+      letter-spacing: 0.5px;
+      color: @black;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+
+}

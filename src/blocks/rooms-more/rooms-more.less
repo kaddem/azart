@@ -1,3 +1,129 @@
 .rooms-more{
-	display: block;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  &__inner {
+    .container(20px);
+  }
+
+  &__head {
+    margin-bottom: 16px;
+    .clearfix;
+  }
+
+  &__title {
+    float: left;
+    margin: 0;
+    font-family: @lora;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.6px;
+    color: @black;
+    font-weight: normal;
+    // text-transform: uppercase;
+  }
+
+  &__link {
+    position: relative;
+    float: right;
+    margin-top: 6px;
+    padding-right: 30px;
+    font-family: @open;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: @warm-grey;
+    text-decoration: none;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      display: inline-block;
+      width: 21px;
+      height: 13px;
+      background-image: url(../img/icon-arrow-right.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &__row {
+    .row(20px);
+    font-size: 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__item {
+    .col(20px, left);
+    .col12-10;
+    float: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  &__room {
+    position: relative;
+    height: 340px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 60px;
+      width: 100%;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: bottom;
+    }
+  }
+
+  &__info {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom; 2
+    height: 100%;
+    padding: 16px 0 16px 30px;
+    font-size: 16px;
+  }
+
+  &__info-title {
+    font-family: @open;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+  }
+
+  &__price {
+    font-family: @open;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+  }
+
+  &__period {
+
+    &:before {
+      content: " / ";
+    }
+  }
 }

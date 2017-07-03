@@ -2,4 +2,24 @@ extends ../layout/_layoutBase.pug
 
 
 block content
-  +page-header()
+  +page-header('--rooms')
+
+  main
+    
+    +rooms-slider()
+
+    +rooms-des()
+
+    +rooms-price()
+
+    +rooms-important()
+
+    +rooms-pay()
+
+    +rooms-info()
+
+    +rooms-more()
+
+    +contacts()
+
+  +page-footer('--rooms')

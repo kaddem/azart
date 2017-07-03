@@ -1,12 +1,12 @@
 mixin rooms()
-  +b.SECTION.rooms&attributes(attributes)
+  +b.SECTION.rooms(id="rooms")&attributes(attributes)
     +e.inner
       +e.SPAN.slogan Номера
       +e.H2.title Забронируйте номер со скидкой 15%!
       +e.P.time
         +e.SPAN.time-start Заезд 14:00
         +e.SPAN.time-end Выезд 12:00
-    
+
     +e.item
       +e.inner
         +e.row
@@ -41,7 +41,7 @@ mixin rooms()
                   li Гладильная доска и утюг
                   li Вентилятор
                 a(class="btn btn--orange" href="#") Бронировать
-                +e.A.link-more(href="#") Подробнее
+                +e.A.link-more(href="room.html") Подробнее
     +e.item
       +e.inner
         +e.row
@@ -74,7 +74,7 @@ mixin rooms()
                   li Гладильная доска и утюг
                   li Вентилятор
                 a(class="btn btn--orange" href="#") Бронировать
-                +e.A.link-more(href="#") Подробнее
+                +e.A.link-more(href="room.html") Подробнее
 
     +e.item
       +e.inner
@@ -110,7 +110,7 @@ mixin rooms()
                   li Гладильная доска и утюг
                   li Вентилятор
                 a(class="btn btn--orange" href="#") Бронировать
-                +e.A.link-more(href="#") Подробнее
+                +e.A.link-more(href="room.html") Подробнее
 
     +e.item
       +e.inner
@@ -146,7 +146,7 @@ mixin rooms()
                   li Гладильная доска и утюг
                   li Вентилятор
                 a(class="btn btn--orange" href="#") Бронировать
-                +e.A.link-more(href="#") Подробнее
+                +e.A.link-more(href="room.html") Подробнее
 
     +e.item
       +e.inner
@@ -182,7 +182,7 @@ mixin rooms()
                   li Гладильная доска и утюг
                   li Вентилятор
                 a(class="btn btn--orange" href="#") Бронировать
-                +e.A.link-more(href="#") Подробнее
+                +e.A.link-more(href="room.html") Подробнее
 
     +e.item
       +e.inner
@@ -217,4 +217,4 @@ mixin rooms()
                   li Гладильная доска и утюг
                   li Плита, холодильник, чайник, тостер, посуда
                 a(class="btn btn--orange" href="#") Бронировать
-                +e.A.link-more(href="#") Подробнее
+                +e.A.link-more(href="room.html") Подробнее
