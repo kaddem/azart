@@ -474,6 +474,10 @@
       position: static;
       padding-top: 0;
       padding-bottom: 0;
+
+      @media screen and (min-width: @width_desktop_min){
+        position: relative;
+      }
     }
 
     & .page-header__logo-box {
@@ -491,7 +495,10 @@
       }
 
       @media screen and (min-width: @width_desktop_min){
-
+        top: -20px;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
       }
     }
 
@@ -503,7 +510,8 @@
       }
 
       @media screen and (min-width: @width_desktop_min){
-
+        .col12-10;
+        .col12-offset-2;
       }
     }
 
@@ -517,12 +525,26 @@
       }
 
       @media screen and (min-width: @width_desktop_min){
-
+        vertical-align: middle;
+        padding-left: 30px;
+        margin-left: 50px;
       }
     }
 
     & .page-header__lang {
       display: none;
+
+      &--tablet {
+        @media screen and (min-width: @width_tablet){
+
+        }
+
+        @media screen and (min-width: @width_desktop_min){
+          display: block;
+        }
+      }
+
+      
     }
 
     & .page-header__social {
@@ -537,7 +559,9 @@
         }
 
         @media screen and (min-width: @width_desktop_min){
-
+          float: none;
+          display: inline-block;
+          margin-left: 40px;
         }
       }
     }
@@ -562,7 +586,7 @@
         }
 
         @media screen and (min-width: @width_desktop_min){
-
+          margin-left: 25px;
         }
 
         &:before {
@@ -571,7 +595,7 @@
           }
 
           @media screen and (min-width: @width_desktop_min){
-
+            left: -15px;
           }
         }
       }
@@ -583,10 +607,31 @@
     }
 
     & .page-header__main-nav {
-       .col(20px, left);
-       .col12-12;
-       margin-left: 0;
-       text-align: center;
+      .col(20px, left);
+      .col12-12;
+      margin-left: 0;
+      text-align: center;
+
+      @media screen and (min-width: @width_tablet){
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+        .col(20px, left);
+        .col12-10;
+        .col12-offset-2;
+        text-align: right;
+      }
+    }
+
+    & .page-header__main-nav ul {
+
+      @media screen and (min-width: @width_tablet){
+
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+        padding: 10px 0;
+      }
     }
 
     & .page-header__main-nav li {
@@ -595,6 +640,10 @@
 
       @media screen and (min-width: @width_tablet){
         margin: 0 10px;
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+        margin-left: 70px;
       }
     }
 
