@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
   Bnovo_Widget.init(function(){
     Bnovo_Widget.open('_bn_widget_', {
         type: "horizontal",
@@ -31,3 +33,7 @@
         url: "https://kaddem.github.io/azart/booking.html"
     });
   });
+
+})
+
+  

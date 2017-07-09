@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 var WuBook= new _WuBook(1492614572);
   var wbparams= {
         lang: 'ru',
@@ -8,3 +10,5 @@ var WuBook= new _WuBook(1492614572);
         mheight: 640
   };
   WuBook.design_iframe("_wbord_", wbparams);
+
+});
