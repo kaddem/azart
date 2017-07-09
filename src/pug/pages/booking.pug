@@ -1,0 +1,16 @@
+extends ../layout/_layoutBase.pug
+
+
+block content
+  +page-header('--rooms')
+
+  main
+    +b.booking
+      +e.inner
+        div(id="_wbord_")
+          a(href="http://en.wubook.net/" style="display: block; margin-top: 5px; text-decoration:none;border:none")
+            img(src="https://wubook.net/imgs/default/booking_by_wu.gif" alt="Online Booking System" title="Hotel and tourism technologies" style="border:none;text-decoration:none")
+
+
+  //- +page-footer('')
+  script(src="https://wubook.net/js/wbbook.jgz")
