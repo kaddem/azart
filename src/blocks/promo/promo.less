@@ -86,13 +86,21 @@
 }
 
 .form {
-  // height: 120px;
-  // padding-top: 25px;
+  height: 120px;
+  padding-top: 25px;
   background-color: rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
 
   &__inner {
     .container(30px);
+
+    & .left {
+      box-sizing: border-box;
+
+      @media screen and (min-width: @width_desktop_min){
+        padding: 0 90px;
+      }
+    }
   }
 
   & iframe {
