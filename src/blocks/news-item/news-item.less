@@ -1,6 +1,21 @@
 .news{
 
   &__item {
+    .clearfix();
+    display: none;
+    outline: none;
+
+    @media screen and (min-width: @width_tablet){
+      display: block;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
+
+    &:first-child {
+      display: block;
+    }
 
     & h3 {
       display: block;

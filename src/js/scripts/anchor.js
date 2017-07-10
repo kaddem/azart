@@ -12,5 +12,6 @@ $(document).ready(function(){
   };
 
   anchorScroll('.page-header__main-nav');
+  anchorScroll('.page-footer__nav');
 
 });

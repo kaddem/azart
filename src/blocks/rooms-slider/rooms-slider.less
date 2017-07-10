@@ -1,6 +1,29 @@
 .rooms-slider{
-	display: block;
-
+  display: block;
   padding-top: 175px;
   background-color: @grey;
+
+  @media screen and (min-width: @width_tablet){
+    padding-top: 110px;
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+    padding-top: 160px;
+  }
+
+  &__slider {
+    width: 85%;
+
+    @media screen and (min-width: @width_tablet){
+
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      width: 70%;
+    }
+  }
+
+  & .slick-list {
+    overflow: visible;
+  }
 }

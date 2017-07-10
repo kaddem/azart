@@ -1,8 +1,49 @@
 .rooms-pay{
 	display: block;
   padding-top: 20px;
-  padding-bottom: 30px; 
+  padding-bottom: 30px;
 
+  &--main {
+    @media screen and (min-width: @width_desktop_min){
+      display: none;
+    }
+  }
+
+  &--aside {
+    display: none;
+    
+    @media screen and (min-width: @width_desktop_min){
+      display: block;
+    }
+
+    & .rooms-pay__inner {
+
+      @media screen and (min-width: @width_desktop_min){
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    & .rooms-pay__pay {
+      @media screen and (min-width: @width_desktop_min){
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    & .rooms-pay__pay-item {
+
+      @media screen and (min-width: @width_desktop_min){
+        margin-right: 35px;
+      }
+
+      &:nth-child(3n) {
+        @media screen and (min-width: @width_desktop_min){
+          margin-right: 0;
+        }
+      }
+    }
+  }
 
   &__inner {
     .container(30px);
@@ -47,24 +88,34 @@
     height: 54px;
 
     @media screen and (min-width: @width_tablet){
+      
+    }
+
+    @media screen and (min-width: @width_desktop_min){
       width: 100px;
       height: 60px;
       margin-right: 20px;
       margin-bottom: 20px;
     }
 
-    @media screen and (min-width: @width_desktop_min){
-    
-    }
-
     &:nth-child(3n) {
       margin-right: 0;
       margin-bottom: 0;
+
+      @media screen and (min-width: @width_tablet){
+        margin-right: 15px;
+        margin-bottom: 15px;
+      }
     }
 
     &:last-child {
       margin-right: 0;
       margin-bottom: 0;
+
+      @media screen and (min-width: @width_tablet){
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
     }
   }
 

@@ -1,7 +1,11 @@
-mixin news-item(title, date, text, text2)
+mixin news-item(title, date, text, text2, imgUrl, alt)
   +e.item&attributes(attributes)
-    +e.content
-      H3= title
-      span= date
-      p= text
-      p= text2
+    +e.news-block
+      +e.content
+        H3= title
+        span= date
+        p= text
+        p= text2
+    +e.visual
+      +e.photo-box
+        +e.IMG.img(src= imgUrl, alt= alt)

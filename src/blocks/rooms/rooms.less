@@ -404,7 +404,7 @@
     text-decoration: none;
     text-transform: uppercase;
     text-align: left;
-    color: @warm-grey;
+    .link;
 
     &:after {
       content: '';
@@ -420,6 +420,13 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+    }
+
+    &:hover {
+
+      &:after {
+        background-image: url(../img/icon-arrow-right-hover.svg);
+      }
     }
   }
 

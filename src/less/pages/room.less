@@ -1,0 +1,49 @@
+.page-inner {
+
+  @media screen and (min-width: @width_tablet){
+
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+}
+
+.page-row {
+
+  @media screen and (min-width: @width_tablet){
+
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+    .row(30px);
+  }
+}
+
+.page-main {
+  @media screen and (min-width: @width_tablet){
+
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+    .col(30px, left);
+    .col12-7;
+  }
+}
+
+.page-aside {
+
+  @media screen and (min-width: @width_tablet){
+
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+    .col(30px, left);
+    .col12-4;
+    .col12-offset-1;
+  }
+}

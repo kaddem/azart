@@ -1,5 +1,6 @@
 mixin rooms-slider()
-	+b.SECTION.rooms-slider&attributes(attributes)
-		block
-		+e.inner
-			+e.P.title rooms-slider
+  +b.rooms-slider&attributes(attributes)
+    +e.inner
+      +e.slider(id="rooms-slider")
+        block
+

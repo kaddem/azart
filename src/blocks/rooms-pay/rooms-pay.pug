@@ -1,5 +1,5 @@
-mixin rooms-pay()
-  +b.SECTION.rooms-pay&attributes(attributes)
+mixin rooms-pay(mod)
+  +b.SECTION.rooms-pay(class= mod)&attributes(attributes)
     +e.inner
       +e.pay
         +e.SPAN.title Принимаем к оплате
@@ -17,4 +17,4 @@ mixin rooms-pay()
           +e.pay-item
             +e.IMG.img(src="img/pay/j-c-b-dark@2x.png")
           +e.pay-item
-            +e.IMG.img(src="img/pay/visa-dark@2x.png")
+            +e.IMG.img(src="img/pay/mir-logo@2x.png")

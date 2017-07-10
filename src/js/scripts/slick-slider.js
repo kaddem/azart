@@ -20,6 +20,20 @@ $(document).ready(function(){
   sliderRoomPage("#family");
   sliderRoomPage("#delux");
 
+  function sliderSingleRoom(id) {
+
+    $(id).slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      // fade: true,
+      dots: false
+    });
+  
+  }
+
+  sliderSingleRoom("#rooms-slider");
+
 
   function sliderCity(id) {
 

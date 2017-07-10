@@ -2,14 +2,32 @@
 	display: block;
 
   &__item {
-    
+
     &:first-child .rooms-info__row {
       border-top: 1px solid rgba(0, 0, 0, .2);
+
+      @media screen and (min-width: @width_desktop_min){
+        border: none;
+      }
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      border-bottom: 1px solid rgba(0, 0, 0, .2);
     }
   }
 
   &__inner {
     .container(20px);
+
+    @media screen and (min-width: @width_tablet){
+
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__row {
@@ -17,9 +35,29 @@
     padding-top: 30px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
+
+    @media screen and (min-width: @width_tablet){
+      // .row(20px);
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      .row(20px);
+      border: none;
+    }
   }
 
   &__title {
+
+    @media screen and (min-width: @width_tablet){
+      .col(20px, left);
+      .col12-4;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      
+    }
     
     & p {
       margin: 0;
@@ -35,6 +73,15 @@
 
   &__list {
 
+    @media screen and (min-width: @width_tablet){
+      .col(20px, left);
+      .col12-8;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      
+    }
+
     & ul {
       margin: 0;
       padding-left: 17px;
@@ -49,6 +96,16 @@
       line-height: 1.47;
       letter-spacing: 0.5px;
       color: @black;
+
+      &:first-child {
+        @media screen and (min-width: @width_tablet){
+          margin-top: 0;
+        }
+
+        @media screen and (min-width: @width_desktop_min){
+          
+        }
+      }
     }
   }
 }

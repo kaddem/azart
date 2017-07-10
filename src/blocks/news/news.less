@@ -1,5 +1,6 @@
 .news{
   display: block;
+  padding-top: 20px;
   padding-bottom: 40px;
   background-color: @grey;
 
@@ -13,6 +14,10 @@
 
   &__inner {
     .container(30px);
+
+    @media screen and (min-width: @width_tablet){
+      position: relative;
+    }
   }
 
   &__row {
@@ -27,7 +32,7 @@
     @media screen and (min-width: @width_tablet){
       .col(20px, left);
       .col12-6;
-      padding-left: 40px;
+      padding-top: 75px;
     }
 
     @media screen and (min-width: @width_desktop_min){
@@ -67,6 +72,7 @@
   }
 
   &__title {
+    margin-top: 0;
     margin-bottom: 15px;
     font-family: @open;
     font-size: 15px;
@@ -77,7 +83,9 @@
     color: @warm-grey;
 
     @media screen and (min-width: @width_tablet){
-      margin-top: 35px;
+      position: absolute;
+      top: 35px;
+      left: 10px;
     }
 
     @media screen and (min-width: @width_desktop_min){
@@ -89,7 +97,7 @@
     padding-bottom: 55px;
 
     @media screen and (min-width: @width_tablet){
-      padding-bottom: 85px;
+      padding-bottom: 0;
     }
 
     @media screen and (min-width: @width_desktop_min){
@@ -97,20 +105,36 @@
     }
 
     & .slick-prev {
-      left: 0;
+      left: 10px;
 
       &:before {
         .sprite(@icon-slider-prev-2x);
         background-position: @icon-slider-prev-2x-offset-x/2 @icon-slider-prev-2x-offset-y/2;
       }
+
+      &:hover {
+
+        &:before {
+          .sprite(@icon-slider-prev-hover-2x);
+          background-position: @icon-slider-prev-hover-2x-offset-x/2 @icon-slider-prev-hover-2x-offset-y/2;
+        }
+      }
     }
 
     & .slick-next {
-      left: 55px;
+      left: 65px;
 
       &:before {
         .sprite(@icon-slider-next-2x);
         background-position: @icon-slider-next-2x-offset-x/2 @icon-slider-next-2x-offset-y/2;
+      }
+
+      &:hover {
+
+        &:before {
+          .sprite(@icon-slider-prev-hover-2x);
+          background-position: @icon-slider-next-hover-2x-offset-x/2 @icon-slider-next-hover-2x-offset-y/2;
+        }
       }
     }
 
@@ -124,10 +148,7 @@
       border: solid 1px @warm-grey;
       background-color: @grey;
       font-size: 0;
-
-      &:hover {
-        opacity: .8;
-      }
+      transition: all .2s ease;
 
       &:before {
         content: '';
@@ -136,6 +157,18 @@
         height: @icon-slider-next-2x-height/2;
         background-size: @icon-slider-next-2x-total-width/2 @icon-slider-next-2x-total-height/2;
       }
+
+      &:hover {
+        border: 1px solid @pumpkin-orange;
+
+        &:before {
+          width: @icon-slider-next-2x-width/2;
+          height: @icon-slider-next-2x-height/2;
+          background-size: @icon-slider-next-2x-total-width/2 @icon-slider-next-2x-total-height/2;
+        }
+      }
+
+      
     }
   }
 }

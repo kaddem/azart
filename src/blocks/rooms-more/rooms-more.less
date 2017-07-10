@@ -3,6 +3,14 @@
   padding-top: 30px;
   padding-bottom: 40px;
 
+  @media screen and (min-width: @width_tablet){
+    padding-top: 80px;
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+
+  }
+
   &__inner {
     .container(20px);
   }
@@ -22,6 +30,16 @@
     color: @black;
     font-weight: normal;
     // text-transform: uppercase;
+
+    @media screen and (min-width: @width_tablet){
+      font-size: 38px;
+      line-height: 46px;
+      letter-spacing: 1px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
   }
 
   &__link {
@@ -36,6 +54,14 @@
     letter-spacing: 0.5px;
     color: @warm-grey;
     text-decoration: none;
+
+    @media screen and (min-width: @width_tablet){
+      margin-top: 25px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
 
     &:after {
       content: '';
@@ -67,22 +93,34 @@
     float: none;
     display: inline-block;
     font-size: 16px;
+
+    @media screen and (min-width: @width_tablet){
+      .col12-4;
+      float: none;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      .col12-3;
+      float: none;
+    }
   }
 
   &__room {
     position: relative;
     height: 340px;
+    display: block;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 0;
+    text-decoration: none;
 
     &:before {
       content: '';
       position: absolute;
       bottom: 0;
       left: 0;
-      height: 60px;
+      height: 50%;
       width: 100%;
       background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
     }
@@ -98,18 +136,30 @@
   &__info {
     position: relative;
     display: inline-block;
-    vertical-align: bottom; 2
-    height: 100%;
-    padding: 16px 0 16px 30px;
+    vertical-align: bottom;
+    // height: 100%;
+    padding: 16px 30px 16px 30px;
     font-size: 16px;
+    box-sizing: border-box;
   }
 
   &__info-title {
+    display: block;
+    margin-bottom: 10px;
     font-family: @open;
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 0.4px;
     color: #ffffff;
+    text-transform: uppercase;
+
+    @media screen and (min-width: @width_tablet){
+      white-space: normal;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+
+    }
   }
 
   &__price {
@@ -125,5 +175,10 @@
     &:before {
       content: " / ";
     }
+  }
+
+  &__price-old {
+    text-decoration: line-through;
+    margin-right: 10px;
   }
 }

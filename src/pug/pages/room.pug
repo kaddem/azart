@@ -4,23 +4,37 @@ extends ../layout/_layoutBase.pug
 block content
   +page-header('--rooms')
 
+  
+      
   main
-    
     +rooms-slider()
+      +roosm-slider-item('img/rooms/single.jpg', '01', '03')
+      +roosm-slider-item('img/rooms/single2.jpg', '02', '03')
+      +roosm-slider-item('img/rooms/single3.jpg', '03', '03')
 
-    +rooms-des()
+    div(class="page-inner")
+      div(class="page-row")
+        div(class="page-main")
 
-    +rooms-price()
+          +rooms-des()
 
-    +rooms-important()
+          +rooms-price()
 
-    +rooms-pay()
+          +rooms-important('--main')
 
-    +rooms-info()
+          +rooms-pay('--main')
+
+          +rooms-info()
+
+        div(class="page-aside")
+          +rooms-important('--aside')
+
+          +rooms-pay('--aside')
 
     +rooms-more()
 
     +contacts()
+
 
   +page-footer('--rooms')
 
