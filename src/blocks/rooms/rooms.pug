@@ -10,7 +10,9 @@ mixin rooms()
     +e.item
       +e.inner
         +e.row
-          +e.visual
+          +e.visual(id="single-box")
+            +e.SPAN.arrow.--prev
+            +e.SPAN.arrow.--next
             +b.slider(id="single")
               +e.item
                 img(src="img/rooms/single.jpg", alt="Одноместный Стандарт")
@@ -45,7 +47,9 @@ mixin rooms()
     +e.item
       +e.inner
         +e.row
-          +e.visual
+          +e.visual(id="double-box")
+            +e.SPAN.arrow.--prev
+            +e.SPAN.arrow.--next
             +b.slider(id="double")
               +e.item
                 img(src="img/rooms/comfort-no-window.jpg", alt="Двухместный комфорт без окна")
@@ -79,7 +83,9 @@ mixin rooms()
     +e.item
       +e.inner
         +e.row
-          +e.visual
+          +e.visual(id="double-window-box")
+            +e.SPAN.arrow.--prev
+            +e.SPAN.arrow.--next
             +b.slider(id="double-window")
               +e.item
                 img(src="img/rooms/comfort.jpg", alt="Двухместный комфорт")
@@ -115,7 +121,9 @@ mixin rooms()
     +e.item
       +e.inner
         +e.row
-          +e.visual
+          +e.visual(id="double-super-box")
+            +e.SPAN.arrow.--prev
+            +e.SPAN.arrow.--next
             +b.slider(id="double-super")
               +e.item
                 img(src="img/rooms/comfort.jpg", alt="Улучшенный комфорт")
@@ -151,7 +159,9 @@ mixin rooms()
     +e.item
       +e.inner
         +e.row
-          +e.visual
+          +e.visual(id="family-box")
+            +e.SPAN.arrow.--prev
+            +e.SPAN.arrow.--next
             +b.slider(id="family")
               +e.item
                 img(src="img/rooms/comfort.jpg", alt="Семейный номер")
@@ -187,7 +197,9 @@ mixin rooms()
     +e.item
       +e.inner
         +e.row
-          +e.visual
+          +e.visual(id="delux-box")
+            +e.SPAN.arrow.--prev
+            +e.SPAN.arrow.--next
             +b.slider(id="delux")
               +e.item
                 img(src="img/rooms/comfort.jpg", alt="Делюкс с кухней")

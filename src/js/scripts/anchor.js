@@ -7,7 +7,7 @@ $(document).ready(function(){
         var currentPosition = $(document).scrollTop();
         var idPosition = $('#'+attr).offset().top;
         var scrollTime = Math.abs(currentPosition - idPosition) / 4; // Math.abs - модуль числа.
-        $('body,html').animate({'scrollTop':idPosition-70},scrollTime);
+        $('body,html').animate({'scrollTop':idPosition-130},scrollTime);
     });
   };
 

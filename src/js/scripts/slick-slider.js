@@ -6,7 +6,8 @@ $(document).ready(function(){
     $(id).slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: false,
+      prevArrow: id + '-box .rooms__arrow--prev',
+      nextArrow: id + '-box .rooms__arrow--next',
       // fade: true,
       dots: true
     });
