@@ -84,22 +84,31 @@
   }
 
   & .slick-prev {
-    bottom: 35px;
-    right: 200px;
+    bottom: 22px;
+    right: 130px;
     .sprite(@arrow-white-prev-2x);
     width: @arrow-white-prev-2x-width/2;
     height: @arrow-white-prev-2x-height/2;
     background-position: @arrow-white-prev-2x-offset-x/2 @arrow-white-prev-2x-offset-y/2;
 
+    @media screen and (min-width: @width_tablet){
+      bottom: 35px;
+      right: 200px;
+    }
   }
 
   & .slick-next {
-    bottom: 35px;
-    right: 60px;
+    bottom: 22px;
+    right: 25px;
     .sprite(@arrow-white-next-2x);
     width: @arrow-white-prev-2x-width/2;
     height: @arrow-white-prev-2x-height/2;
     background-position: @arrow-white-next-2x-offset-x/2 @arrow-white-next-2x-offset-y/2;
+
+    @media screen and (min-width: @width_tablet){
+      bottom: 35px;
+      right: 60px;
+    }
   }
 
 }

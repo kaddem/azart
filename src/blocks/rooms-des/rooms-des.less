@@ -2,11 +2,12 @@
 	display: block;
 
   @media screen and (min-width: @width_tablet){
-
+    padding-top: 20px;
   }
 
   @media screen and (min-width: @width_desktop_min){
-
+    font-size: 0;
+    padding-top: 80px;
   }
 
   &__inner {
@@ -32,6 +33,21 @@
     @media screen and (min-width: @width_tablet){
       .col(30px, right);
       .col12-6;
+      border: 1px solid rgba(0, 0, 0, .6);
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      position: absolute;
+      width: 370px;
+      height: 430px;
+      top: 50px;
+      right: 15px;
+      box-sizing: border-box;
+      border: 1px solid rgba(0, 0, 0, .6);
+    }
+
+    & p {
+      font-size: 16px;
     }
   }
 
@@ -41,11 +57,12 @@
     .col12-12;
 
     @media screen and (min-width: @width_tablet){
+      padding-top: 30px;
       .col12-6;
     }
 
     @media screen and (min-width: @width_desktop_min){
-      
+      .col12-12;
     }
   }
 
@@ -57,9 +74,25 @@
     color: @black;
     font-weight: normal;
     text-transform: uppercase;
+
+    @media screen and (min-width: @width_tablet){
+      
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      width: 50%;
+      display: inline-block;
+      vertical-align: baseline;
+    }
   }
 
   &__price {
+
+    @media screen and (min-width: @width_desktop_min){
+      width: 50%;
+      display: inline-block;
+      vertical-align: baseline;
+    }
 
     & p {
       display: inline-block;
