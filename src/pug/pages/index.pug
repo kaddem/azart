@@ -3,6 +3,17 @@ extends ../layout/_layoutBase.pug
 
 block content
   +page-header('')
+    ul
+      li
+        a(href="#about") Об Отеле
+      li
+        a(href="#offers") Акции
+      li
+        a(href="#excursion") Экскурсии
+      li
+        a(href="#rooms") Номера
+      li
+        a(href="#contacts") Контакты
 
   main
 
@@ -26,7 +37,6 @@ block content
     +partners()
 
     +contacts()
-
 
   +page-footer('')
 

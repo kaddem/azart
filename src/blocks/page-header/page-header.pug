@@ -28,14 +28,15 @@ mixin page-header(mod)
       +e.inner
         +e.row
           +e.NAV.main-nav(class= mod)
-            ul
-              li
-                a(href="#about") Об Отеле
-              li
-                a(href="#offers") Акции
-              li
-                a(href="#excursion") Экскурсии
-              li
-                a(href="#rooms") Номера
-              li
-                a(href="#contacts") Контакты
+            block
+            //- ul
+            //-   li
+            //-     a(href="index.html#about") Об Отеле
+            //-   li
+            //-     a(href="index.html#offers") Акции
+            //-   li
+            //-     a(href="index.html#excursion") Экскурсии
+            //-   li
+            //-     a(href="index.html#rooms") Номера
+            //-   li
+            //-     a(href="index.html#contacts") Контакты

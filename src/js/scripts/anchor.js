@@ -11,7 +11,18 @@ $(document).ready(function(){
     });
   };
 
-  anchorScroll('.page-header__main-nav');
-  anchorScroll('.page-footer__nav');
+  // $('.main-nav__rooms')
+
+  var check = $(".page-header__main-nav").is(".page-header__main-nav--rooms");
+
+  if ( check ) {
+    console.log('работает проверка');
+    return;
+  } else {
+    anchorScroll('.page-header__main-nav');
+    anchorScroll('.page-footer__nav');
+  }
+
+  
 
 });

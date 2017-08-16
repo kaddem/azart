@@ -1,0 +1,124 @@
+extends ../layout/_layoutBase.pug
+
+block content
+  +page-header('--rooms')
+    ul
+      li
+        a(href="/#about") Об Отеле
+      li
+        a(href="/#offers") Акции
+      li
+        a(href="/#excursion") Экскурсии
+      li
+        a(href="/#rooms") Номера
+      li
+        a(href="/#contacts") Контакты
+
+  main
+    +rooms-slider()
+      +roosm-slider-item('img/rooms/family/photo1.jpg', '01', '06')
+      +roosm-slider-item('img/rooms/family/photo2.jpg', '02', '06')
+      +roosm-slider-item('img/rooms/family/photo4.jpg', '03', '06')
+      +roosm-slider-item('img/rooms/family/photo5.jpg', '04', '06')
+      +roosm-slider-item('img/rooms/family/photo6.jpg', '05', '06')
+      +roosm-slider-item('img/rooms/family/photo7.jpg', '06', '06')
+
+    div(class="page-inner")
+      div(class="page-row")
+        div(class="page-main")
+
+          +rooms-des()
+            +e.form
+              p тут форма
+            +e.des
+              +e.H1.title Семейный номер
+              +e.price
+                p Цена от:
+                +e.SPAN.price-old 3 800
+                  span(class="rouble") P
+                +e.SPAN.price-new 3 230
+                  span(class="rouble") P
+              +e.P.time
+                +e.SPAN.time-start Заезд 14:00
+                +e.SPAN.time-end Выезд 12:00
+              +e.text
+                p В этом номере-студио можно пользоваться телевизором с плоским экраном и кабельным телевидением.
+                p Площадь номера: 15 м²
+
+          +rooms-price()
+
+          +rooms-important('--main')
+
+          +rooms-pay('--main')
+
+          +rooms-info()
+            +e.item
+              +e.inner
+                +e.row
+                  +e.title
+                    p В номере:
+                  +e.list
+                    ul
+                      li 1 двуспальня кровать или 1 односпальная
+                      li Собственная ванная комната
+                      //- li Кухня, оборудованная всем необходимым
+                      li Телевизор с плоским экраном и кабельным ТВ
+
+            +e.item
+              +e.inner
+                +e.row
+                  +e.title
+                    p Услуги и удобства:
+                  +e.list
+                    ul
+                      li Высокоскоростной wi-fi на территории всего отеля предоставляется бесплатно
+                      li Бесплатная частная парковка на месте (предварительный заказ не требуется) 
+                      li Сейф
+                      li Вентилятор
+                      li Утюг и гладильные принадлежности
+                      li Постельное белье
+
+            +e.item
+              +e.inner
+                +e.row
+                  +e.title
+                    p Ванная комната:
+                  +e.list
+                    ul
+                      li фен
+                      li полотенца
+                      //- //- li халат и тапочки
+                      li бесплатные туалетные принадлежности (гель для душа, шампунь)
+                      li душ
+                      li санузел
+                      li туалетная бумага
+
+            +e.item
+              +e.inner
+                +e.row
+                  +e.title
+                    p Общая информация:
+                  +e.list
+                    ul
+                      li Паркетный пол
+                      li Отопление
+                      li Стиральная машина (в отдельной комнате)
+                      li Камера хранения багажа
+                      li Ежедневная уборка номера
+                      li Услуга «звонок-будильник»
+
+        div(class="page-aside")
+          +rooms-important('--aside')
+
+          +rooms-pay('--aside')
+
+    +rooms-more()
+
+    +contacts()
+
+  +page-footer('--rooms')
+
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+
+  script(src='/js/vendor.min.js')
+  script(src='/js/script.min.js')
