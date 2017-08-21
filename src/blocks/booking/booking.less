@@ -3,3 +3,45 @@
     .container(30px);
   }
 }
+
+
+.bnovo {
+
+  &__field {
+
+    @media only screen and (max-width: 800px) {
+      width: 33.33% !important;
+    }
+  }
+}
+
+.bnovo.m-hor .bnovo__fields.m-3 .bnovo__field {
+    width: 100% !important;
+
+  @media only screen and (max-width: 800px) {
+    width: 33.33% !important;
+  }
+
+  @media screen and (min-width: @width_tablet){
+    width: 33.33% !important;
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+    position: relative;
+    padding-top: 110px;
+  }
+
+}
+
+.bnovo.m-hor .bnovo__fields.m-3 .bnovo__inputs {
+  display: block !important;
+
+  @media screen and (min-width: @width_tablet){
+    display: block !important;
+  }
+
+  @media only screen and (max-width: 800px) {
+    display: block !important;
+  }
+
+}

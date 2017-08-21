@@ -29,11 +29,13 @@
   &__form {
     .col(30px, left);
     .col12-12;
+    padding-top: 20px;
 
     @media screen and (min-width: @width_tablet){
       .col(30px, right);
+      padding-top: 20px;
       .col12-6;
-      border: 1px solid rgba(0, 0, 0, .6);
+      // border: 1px solid rgba(0, 0, 0, .6);
     }
 
     @media screen and (min-width: @width_desktop_min){
@@ -43,11 +45,29 @@
       top: 50px;
       right: 15px;
       box-sizing: border-box;
-      border: 1px solid rgba(0, 0, 0, .6);
+      // border: 1px solid rgba(0, 0, 0, .6);
     }
 
     & p {
       font-size: 16px;
+    }
+  }
+
+  & .form-border {
+    height: 323px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+
+    @media screen and (min-width: @width_tablet){
+      padding-top: 40px;
+      padding-bottom: 0px;
+      border: 1px solid rgba(0, 0, 0, .2);
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      padding-top: 40px;
     }
   }
 
