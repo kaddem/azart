@@ -29,6 +29,7 @@ $(document).ready(function(){
         btn_textover: "#ffffff",
         btn_bordcolor: "#fe8205",
         btn_bordhover: "#fe9934",
+        btn_text: "Бронировать номер",
         arrival: "Заезд",
         departure: "Выезд",
         text_concierge: "Получи скидку через Bnovo Concierge",

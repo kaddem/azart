@@ -155,6 +155,7 @@
     height: 213px;
 
     @media screen and (min-width: @width_tablet){
+      position: relative;
       height: 400px;
     }
 
@@ -188,6 +189,23 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
+  }
+
+  &__btn {
+    margin-top: 20px;
+
+    @media screen and (min-width: @width_tablet){
+      position: absolute;
+      bottom: 30px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      bottom: 30px;
+      right: 150px;
+      transform: translateX(0);
+    }
   }
 
 
