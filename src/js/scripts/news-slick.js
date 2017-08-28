@@ -1,17 +1,17 @@
 $(document).ready(function(){
 
-    if( $(window).width() > 768 ) {
-      owlNews();
-    }
+    // if( $(window).width() > 768 ) {
+    //   owlNews();
+    // }
 
-    $( window ).resize(function() {
-      if( $(".news__carousel").hasClass("slick-initialized") ) {
-        console.log('init done');
-        return;
-      } else if ( $(window).width() > 768 ) {
-        owlNews();
-      }
-    });
+    // $( window ).resize(function() {
+    //   if( $(".news__carousel").hasClass("slick-initialized") ) {
+    //     console.log('init done');
+    //     return;
+    //   } else if ( $(window).width() > 768 ) {
+    //     owlNews();
+    //   }
+    // });
 
     function owlNews() {
       $('#news-carousel').slick({
@@ -24,12 +24,14 @@ $(document).ready(function(){
         responsive: [
           {
             breakpoint: 768,
-            settings: "unslick"
+            adaptiveHeight: true
+            // settings: "unslick"
           }
         ]
       });
     }
     
+    owlNews();
 
 
 });

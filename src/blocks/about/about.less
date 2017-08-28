@@ -150,6 +150,7 @@
   }
 
   &__visual {
+    position: relative;
     .col(00px, left);
     .col12-12;
     height: 213px;
@@ -192,10 +193,18 @@
   }
 
   &__btn {
+    width: 300px;
     margin-top: 20px;
+    padding: 14px;
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+    transform: translateX(50%);
+    box-sizing: border-box;
 
     @media screen and (min-width: @width_tablet){
       position: absolute;
+      width: auto;
       bottom: 30px;
       right: 50%;
       transform: translateX(50%);
