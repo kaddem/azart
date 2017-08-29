@@ -1,7 +1,8 @@
 mixin offers-content(srcImg, alt, title, text)
   +b.SECTION.offers-content&attributes(attributes)
     +e.photo-box
-      img(src= srcImg, alt= alt)
+      picture
+        img(src= srcImg, alt= alt)
     h3= title
     p= text
     a(href="#" class="btn btn--orange") Бронировать номер
