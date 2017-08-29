@@ -11,15 +11,38 @@ $(window).load(function() {
       var photoHeight = photo.height();
       var photoRatio = photoHeight / photoWidth;
 
+      // if ( itemRatio < photoRatio ) {
+      //   photo.width('100%');
+      //   photo.height('auto');
+      // } else if (itemRatio > photoRatio) {
+      //   photo.height('100%');
+      //   photo.width('auto');
+      // } else {
+      //   photo.width('100%');
+      //   photo.height('auto');
+      // }
+
       if ( itemRatio < photoRatio ) {
-        photo.width('100%');
-        photo.height('auto');
+        $(photo).attr({
+          "width": "100%",
+          "height": "auto"
+        });
+        // photo.width('100%');
+        // photo.height('auto');
       } else if (itemRatio > photoRatio) {
-        photo.height('100%');
-        photo.width('auto');
+        $(photo).attr({
+          "width": "auto",
+          "height": "100%"
+        });
+        // photo.height('100%');
+        // photo.width('auto');
       } else {
-        photo.width('100%');
-        photo.height('auto');
+        $(photo).attr({
+          "width": "100%",
+          "height": "auto"
+        });
+        // photo.width('100%');
+        // photo.height('auto');
       }
     });
   }
@@ -36,11 +59,20 @@ $(window).load(function() {
       var photoRatio = photoHeight / photoWidth;
 
       if ( itemRatio > photoRatio ) {
-        photo.width('100%');
+        $(photo).attr({
+          "width": "100%"
+        });
+        // photo.width('100%');
       } else if (itemRatio < photoRatio) {
-        photo.height('100%');
+        // photo.height('100%');
+        $(photo).attr({
+          "height": "100%"
+        });
       } else {
-        photo.width('100%');
+        $(photo).attr({
+          "width": "100%"
+        });
+        // photo.width('100%');
       }
     });
   }
