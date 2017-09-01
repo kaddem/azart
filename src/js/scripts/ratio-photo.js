@@ -1,5 +1,35 @@
 $(window).load(function() {
 
+  // if ( $(window).width() < 768 ) {
+  //   var roomsItem = $('#rooms').find('.slick-slider');
+  //   var sliderWidth = $(roomsItem).innerWidth();
+  //   var sliderHeight = (sliderWidth * 0.66) ;
+  //   console.log(sliderHeight);
+  //   var itemH = $(roomsItem).find('.slider__item');
+  //   $(itemH).css({
+  //     "height" : sliderHeight
+  //   });
+  // }
+
+  // window.addEventListener("resize", function() {
+
+  //   if ( $(window).width() < 768 ) {
+  //     var roomsItem = $('#rooms').find('.slick-slider');
+  //     var sliderWidth = $(roomsItem).innerWidth();
+  //     var sliderHeight = (sliderWidth * 0.66) ;
+  //     console.log(sliderHeight);
+  //     var itemH = $(roomsItem).find('.slider__item');
+  //     $(itemH).css({
+  //       "height" : sliderHeight
+  //     });
+  //   } else {
+  //     $('#rooms .slider__item').css({
+  //       "height" : "450px"
+  //     });
+  //   }
+
+  // }, false);
+
   function ratioPhoto(block) {
     $(block).each(function(){
       var itemWidth = $(this).width();
@@ -23,6 +53,8 @@ $(window).load(function() {
       // }
 
       if ( itemRatio < photoRatio ) {
+        // console.log('1 варик');
+        // console.log(itemRatio +'vs'+ photoRatio);
         $(photo).attr({
           "width": "100%",
           "height": "auto"
@@ -30,6 +62,8 @@ $(window).load(function() {
         // photo.width('100%');
         // photo.height('auto');
       } else if (itemRatio > photoRatio) {
+        // console.log('2 варик');
+        // console.log(itemRatio +'vs'+ photoRatio);
         $(photo).attr({
           "width": "auto",
           "height": "100%"
@@ -37,6 +71,8 @@ $(window).load(function() {
         // photo.height('100%');
         // photo.width('auto');
       } else {
+        // console.log('3 варик');
+        // console.log(itemRatio +'vs'+ photoRatio);
         $(photo).attr({
           "width": "100%",
           "height": "auto"
